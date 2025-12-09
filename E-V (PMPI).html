@@ -4503,9 +4503,12 @@ function showProgressOverview() {
   // --- 📚 DISTRIBUIÇÃO DE QUESTÕES POR DISCIPLINA ---
   const disciplinasQuestoes = [
     { nome: 'Língua Portuguesa', questoes: globalMetas['Língua_Portuguesa']?.value || '—' },
-    { nome: 'Doutrina Oper.', questoes: globalMetas['Doutrina_Oper.']?.value || '—' },
-    { nome: 'Leg. Institucional', questoes: globalMetas['Leg._Institucional']?.value || '—' },
-    { nome: 'Leg._Jurídica', questoes: globalMetas['Leg._Jurídica']?.value || '—' },
+	{ nome: 'Raciocínio Lógico E Matemática Básica', questoes: globalMetas['Raciocínio-Lógico_ E_Matemática_Básica']?.value || '—' },
+	{ nome: 'Conhecimentos Gerais', questoes: globalMetas['Conhecimentos_Gerais']?.value || '—' },
+	
+    { nome: 'Conhecimentos Regionais do Estado do Piauí', questoes: globalMetas['Conhecimentos_Regionais_do_Estado_do_Piauí']?.value || '—' },
+    { nome: 'Legislação da Polícia Militar do Estado do Piauí', questoes: globalMetas['Legislação_da_Polícia_Militar_do_Estado_do_Piauí']?.value || '—' },
+    { nome: 'Noções de Direito', questoes: globalMetas['Noções_de_Direito']?.value || '—' },
   ];
   let disciplinasContent = '';
   disciplinasQuestoes.forEach(disciplina => {
